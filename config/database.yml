@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: overtime_database
+
+
+test:
+  <<: *default
+  database: overtime_database
+
+production:
+  <<: *default
+  database: overtime_database
+  username:
+  password:
