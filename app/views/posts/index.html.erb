@@ -1,2 +1,7 @@
 <h1>Index Posts</h1>
 <p>Some text.....</p>
+
+<%	 @posts.each do |post| %>
+  <h2><%= post.rationale %></h2>
+  <p><%= post.date %></p>
+<% end %>
